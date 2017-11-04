@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::resource('admin/page','admin\PageController');
+Route::resource('admin/company','admin\CompanyController');
+Route::resource('admin/phone','admin\PhoneController');
+Route::resource('admin/repair','admin\RepairController');
